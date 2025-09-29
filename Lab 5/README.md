@@ -17,7 +17,12 @@ the constraints file maps your inputs and outputs to real pins on the FPGA.
 
 ### 1 - Explain the role of the Top Level file.
 
+The top level file connects all the equation files into one and assigns the inputs and outputs to the physical board switches and leds.
+
 ### 2 - Explain the function of the Constraints file.
+
+The funciton of the contraints file is to open up which board switches and leds are to be used and preps it for use.
 
 ### 3 - Was the selection of Minterm and Maxterm correct for each circuit? What would you have chosen?
 
+Yes the selection of the minterms and maxterms were correct for each circuit, which gave us the output of the second circuit properly. I would've chosen the minterms for both as it would make it easier to calculate and less work when it comes to identifying the simplified equations.
