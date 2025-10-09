@@ -1,0 +1,19 @@
+        module top(
+            input [9:0] sw,
+            output [13:0] led
+            );
+            
+        half_sub half_sub_inst(
+            .A(sw[0]),
+            .B(sw[1]),
+            .Y(led[0]),
+            .Borrow(led[1])
+            );
+        ones_compliment oc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[2],led[3],led[4],led[5]);
+        twos_compliment tc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[6],led[7],led[8],led[9],led[10],led[11],led[12],led[13]);
+          
+            
+            
+endmodule
+            
+        
