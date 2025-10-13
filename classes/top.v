@@ -9,8 +9,8 @@
             .Y(led[0]),
             .Borrow(led[1])
             );
-        ones_compliment oc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[2],led[3],led[4],led[5]);
-        twos_compliment tc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[6],led[7],led[8],led[9],led[10],led[11],led[12],led[13]);
+        ones_complement oc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[2],led[3],led[4],led[5]);
+        twos_complement tc_inst(sw[2],sw[3],sw[4],sw[5],sw[6],sw[7],sw[8],sw[9],led[6],led[7],led[8],led[9],led[10],led[11],led[12],led[13]);
           
             
             

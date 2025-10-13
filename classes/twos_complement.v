@@ -1,4 +1,4 @@
-    module twos_compliment(
+    module twos_complement(
         input A, B, C, D, E, F, G, H,
         output Y0, Y1, Y2, Y3, Y4, Y5, Y6, Y7
         );

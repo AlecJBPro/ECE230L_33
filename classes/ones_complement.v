@@ -1,4 +1,4 @@
-    module ones_compliment(
+    module ones_complement(
         input A, B, C, D, E, F, G, H, I,
         output Y, X, Z, y
     );
