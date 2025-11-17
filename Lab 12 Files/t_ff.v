@@ -1,13 +1,19 @@
 module t_flipflop(
-    input  wire clk,
-    input  wire reset,
-    input  wire T,
-    output reg  Q
+    input   clk,
+    input   reset,
+    input   T,
+    output reg  Q 
 );
-    always @(posedge clk or posedge reset) begin
-        if (reset)
-            Q <= 0;
-        else if (T)
-            Q <= ~Q;
-    end
+
+wire q_ff;
+assign q_ff = (T) ?  ~Q:Q;
+
+
+always @(posedge clk, posedge reset)begin
+    if(reset) 
+        Q<=1'b0;
+    else
+        Q<=q_ff;
+
+end
 endmodule

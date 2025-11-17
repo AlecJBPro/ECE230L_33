@@ -6,7 +6,7 @@ module modulo_divider(
 );
   
     wire [2:0] Q;       
-    wire [2:0] SUM;       
+    wire [2:0] sum;       
     wire c1, c2, c3;     
     wire cmp_hit;        
 
@@ -14,23 +14,23 @@ module modulo_divider(
         .A(Q[0]),
         .B(1'b1),
         .C(1'b0),
-        .Y(SUM[0]),
-        .cout(c1)
+        .Y(sum[0]),
+        .Cout(c1)
     );
 
     full_adder FA1 (
         .A(Q[1]),
         .B(1'b0),
         .C(c1),
-        .Y(SUM[1]),
-        .cout(c2)
+        .Y(sum[1]),
+        .Cout(c2)
     );
 
     full_adder FA2 (
         .A(Q[2]),
         .B(1'b0),
         .C(c2),
-        .Y(SUM[2]),
+        .Y(sum[2]),
         .Cout(c3)
     );
 
@@ -47,7 +47,7 @@ module modulo_divider(
             out <= ~out;   
         end
         else
-            count_reg <= SUM;
+            count_reg <= sum;
     end
 
     assign Q = count_reg;
