@@ -13,7 +13,7 @@ In this lab, you’ve learned about One Hot and Binary state machines and how to
 
 ## Lab Questions
 ### Summary:
-In this lab, we explored finite state machine. We implemented the same state machine using bot One Hot and Binary encoding, which helped us to understand the difference between them better. We also mapped the state bits and outputs to switches, buttons, and LED's and observed how the machine behaved on hardware.
+In this lab, we explored finite state machine. We implemented the same state machine using both One Hot and Binary encoding, which helped us to understand the difference between them better. We also mapped the state bits and outputs to switches, buttons, and LED's and observed how the machine behaved on hardware.
 
 ### Compare and contrast One Hot and Binary encodings
 One Hot encoding simplifies logic as it uses one flip-flop per state, while binary encoding uses less flip-flops but requires more complex combinational logic. 
